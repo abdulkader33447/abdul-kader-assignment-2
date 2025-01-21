@@ -1,0 +1,187 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* font family's */
+
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+
+}
+
+
+.raleway-font {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+
+}
+
+body {
+    /* max-width: 1440px; */
+}
+
+/* shared style */
+.display-flex {
+    display: flex;
+}
+
+.display-grid {
+    display: grid;
+}
+
+
+/* navbar style */
+/* .navbar-container{
+    margin: 0px auto;
+    
+} */
+.navbar {
+    max-width: 1160px;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+   
+}
+
+
+.brand {
+    align-items: center;
+    gap: 11px;
+}
+
+.brand-name {
+    font: 2rem;
+    font-weight: 700;
+    color: #111111;
+}
+
+.list-item {
+    list-style-type: none;
+    gap: 32px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.home {
+    font-weight: 700;
+}
+
+#home {
+    color: #FEA301;
+}
+
+#about {
+    color: #01ACFD;
+}
+
+#facilities {
+    color: #05D4DF;
+}
+
+#admission{
+    color: #5D58EF;
+}
+.nav-link {
+    text-decoration: none;
+}
+.btn-one{
+    font: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #FEA301;
+    padding: 10px 60px;
+    border-radius: 12px;
+}
+.hamburger{
+    display: none;
+}
+
+/* banner section */
+.banner{
+    max-width: 1160px;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #111;
+}
+.empowring{
+    color: #FEA301;
+}
+.vision{
+    color: #01ACFD;
+}
+.banner-descript{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #111111;
+    line-height: auto;
+    margin: 24px 0px;
+}
+.enroll-btn{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #111;
+    padding: 10px 47px;
+    border-radius: 12px;
+}
+.banner-img{
+    width: 100%;
+    height: 100%;
+}
+
+/* responsive stated */
+@media screen and (max-width: 576px) {
+    
+    .navbar{
+        max-width: 100%;
+        margin: 0px auto;
+        border: 0.5px solid var(--Orange, #FEA301);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .btn-one,
+    .list-item,
+    .brand-name{
+        display: none;
+    }
+    .bag{
+        margin-top: 12px;
+        margin-bottom: 12px;
+        margin-left: 16px;
+    }
+    .hamburger{
+        display: block;
+        margin: 20px 16px 20px 330px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        max-width: 100%;
+        text-align: center;
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+    .banner-descript{
+        font-size: 0.87rem;
+        font-weight: 500;
+        margin: 18px;
+    }
+    .enroll-btn{
+        font-size: 1rem;
+    }
+   
+}
