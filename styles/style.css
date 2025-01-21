@@ -47,7 +47,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 20px auto;
-   
+
 }
 
 
@@ -85,13 +85,15 @@ body {
     color: #05D4DF;
 }
 
-#admission{
+#admission {
     color: #5D58EF;
 }
+
 .nav-link {
     text-decoration: none;
 }
-.btn-one{
+
+.btn-one {
     font: 1.2rem;
     font-weight: 600;
     color: #fff;
@@ -99,37 +101,43 @@ body {
     padding: 10px 60px;
     border-radius: 12px;
 }
-.hamburger{
+
+.hamburger {
     display: none;
 }
 
 /* banner section */
-.banner{
+.banner {
     max-width: 1160px;
     margin: 0px auto;
     align-items: center;
     justify-content: space-between;
     margin: 20px auto;
 }
-.banner-title{
+
+.banner-title {
     font-size: 3.5rem;
     font-weight: 700;
     color: #111;
 }
-.empowring{
+
+.empowring {
     color: #FEA301;
 }
-.vision{
+
+.vision {
     color: #01ACFD;
 }
-.banner-descript{
+
+.banner-descript {
     font-size: 1.2rem;
     font-weight: 400;
     color: #111111;
     line-height: auto;
     margin: 24px 0px;
 }
-.enroll-btn{
+
+.enroll-btn {
     font-size: 1.2rem;
     font-weight: 700;
     color: #fff;
@@ -137,87 +145,115 @@ body {
     padding: 10px 47px;
     border-radius: 12px;
 }
-.banner-img{
+
+.banner-img {
     width: 100%;
     height: 100%;
 }
 
 /* curriculum */
-.curriculum{
+.curriculum {
     text-align: center;
     background-image: url("../assets/bg.png");
     background-repeat: no-repeat;
 }
-.curriculum-title{
+
+.curriculum-title {
     font-size: 2.8rem;
     font-weight: 700;
     color: #000000;
     margin: 60px auto 80px;
 }
-.card-container{
+
+.card-container {
     max-width: 1152px;
     margin: 0px auto;
     align-items: center;
     justify-content: space-between;
     gap: 21px;
-    
+
 }
-.card-one{
+
+.card-one {
     padding: 50px 40px;
     border-radius: 18px;
     border: 0.943px solid #DEF5FF;
     box-shadow: 0px 0px 28.3px 0.93px rgba(0, 0, 0, 0.05);
     background: linear-gradient(180deg, #DEF5FF 0%, rgba(255, 255, 255, 0.00) 48%), #fff;
 }
-.card-two{
+
+.card-two {
     padding: 52px 40px;
     border-radius: 18px;
     border: 0.943px solid #FFF4DC;
     box-shadow: 0px 0px 28.3px 0.93px rgba(0, 0, 0, 0.05);
     background: linear-gradient(180deg, #FFF4DC 0%, rgba(255, 255, 255, 0.00) 48%), #fff;
 }
-.card-three{
+
+.card-three {
     padding: 52px 40px;
     border-radius: 18px;
     border: 0.943px solid #F2E8FF;
     box-shadow: 0px 0px 28.3px 0.93px rgba(0, 0, 0, 0.05);
     background: linear-gradient(180deg, #F2E8FF 0%, rgba(255, 255, 255, 0.00) 48%), #fff;
 }
-.card-title{
+
+.card-title {
     font-size: 1.5rem;
     font-weight: 700;
     color: #202020;
     margin-top: 32px;
 }
-.card-descript{
+
+.card-descript {
     font-size: 0.9rem;
     font-weight: 500;
     line-height: 28px;
     color: #808080;
     margin: 32px 0px;
 }
-.card-btn-one{
+
+.card-btn-one {
     font-size: 0.9rem;
     font-weight: 700;
     background-color: #fff;
     color: #64C8FF;
 }
-.card-btn-two{
+
+.card-btn-two {
     font-size: 0.9rem;
     font-weight: 700;
     background-color: #fff;
     color: #F0AA00;
 }
-.card-btn-three{
+
+.card-btn-three {
     font-size: 0.9rem;
     font-weight: 700;
     background-color: #fff;
     color: #8700FF;
 }
+
+.left-slide {
+    width: 60px;
+    height: 60px;
+    margin: 80px 10px 60px 0px;
+
+    border-radius: 50%;
+    background-color: #FEA301;
+}
+
+.right-slide {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FEA301;
+}
+
 /* responsive stated */
 @media screen and (max-width: 576px) {
-    
-    .navbar{
+
+    .navbar {
         max-width: 100%;
         margin: 0px auto;
         border: 0.5px solid var(--Orange, #FEA301);
@@ -225,35 +261,60 @@ body {
         align-items: center;
         justify-content: space-between;
     }
+
     .btn-one,
     .list-item,
-    .brand-name{
+    .brand-name {
         display: none;
     }
-    .bag{
+
+    .bag {
         margin-top: 12px;
         margin-bottom: 12px;
         margin-left: 16px;
     }
-    .hamburger{
+
+    .hamburger {
         display: block;
         margin: 20px 16px 20px 330px;
     }
-    .banner{
+
+    .banner {
         flex-direction: column-reverse;
         max-width: 100%;
         text-align: center;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 2rem;
     }
-    .banner-descript{
+
+    .banner-descript {
         font-size: 0.87rem;
         font-weight: 500;
         margin: 18px;
     }
-    .enroll-btn{
+
+    .enroll-btn {
         font-size: 1rem;
     }
-   
+    .curriculum-title{
+        font-size: 1.62rem;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        max-width: 469px;
+    }
+    .card-one,
+    .card-two,
+    .card-three{
+    width: 370px;
+    }
+    .left-slide,
+    .right-slide{
+        display: none;
+    }
 }
