@@ -100,7 +100,11 @@ body {
 .hamburger {
   display: none;
 }
-
+.marq {
+  font-size: 26px;
+  font-weight: 700;
+  color: #03b8c2;
+}
 /* banner section */
 .banner {
   max-width: 1160px;
@@ -149,6 +153,7 @@ body {
 /* curriculum */
 .curriculum {
   text-align: center;
+  /* background-color: #3cd7e844; */
   background-image: url("../assets/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -217,6 +222,10 @@ body {
   background-color: #fff;
   color: #64c8ff;
 }
+.ankor-1 {
+  text-decoration: none;
+  color: #64c8ff;
+}
 
 .card-btn-two {
   font-size: 0.9rem;
@@ -224,30 +233,39 @@ body {
   background-color: #fff;
   color: #f0aa00;
 }
-
+.ankor-2 {
+  text-decoration: none;
+  color: #f0aa00;
+}
 .card-btn-three {
   font-size: 0.9rem;
   font-weight: 700;
   background-color: #fff;
   color: #8700ff;
 }
-
+.ankor-3 {
+  text-decoration: none;
+  color: #8700ff;
+}
 .left-slide {
   width: 60px;
   height: 60px;
   margin: 80px 10px 60px 0px;
-
   border-radius: 50%;
   background-color: #fea301;
 }
-
+.left-slide:hover {
+  background-color: #9e6400;
+}
 .right-slide {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   background-color: #fea301;
 }
-
+.right-slide:hover {
+  background-color: #9e6400;
+}
 /* Our Stories section */
 .our-stories {
   text-align: center;
@@ -277,10 +295,6 @@ body {
   gap: 19px;
   text-align: start;
   grid-template-columns: repeat(2, 1fr);
-}
-.stori-img {
-  border-radius: 16px 16px 0px 0px;
-  /* display: block; */
 }
 
 .stori-one-date {
@@ -350,10 +364,14 @@ body {
 .stori-three,
 .stori-four,
 .stori-five {
-  width: 290px;
+  max-width: 590px;
   height: 301px;
   border-radius: 16px;
   background-color: #fff;
+}
+.stori-img {
+  border-radius: 16px 16px 0px 0px;
+  /* max-width: 90px; */
 }
 #stori-four-one,
 #stori-four-two {
@@ -386,8 +404,13 @@ body {
   justify-content: space-around;
 }
 .logo {
+  align-items: center;
   gap: 10px;
   margin-bottom: 35px;
+}
+.logo img {
+  width: 81px;
+  height: 82px;
 }
 .logo h1 {
   font-size: 42px;
@@ -401,12 +424,27 @@ body {
 .footer-menu h5 {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 .footer-menu li {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 500;
+
   list-style: none;
+
+  margin-top: 20px;
+}
+.footer-link {
+  text-decoration: none;
+  color: #fff;
+}
+.touch {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.social {
+  margin-left: 7px;
 }
 
 /* responsive stated */
@@ -436,6 +474,9 @@ body {
     display: block;
     margin: 20px 16px 20px 330px;
   }
+  .marq {
+    font-size: 20px;
+  }
 
   .banner {
     flex-direction: column-reverse;
@@ -456,6 +497,10 @@ body {
   .enroll-btn {
     font-size: 1rem;
   }
+  .curriculum {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .curriculum-title {
     font-size: 1.62rem;
     margin-top: 40px;
@@ -464,7 +509,7 @@ body {
 
   .card-container {
     flex-direction: column;
-    max-width: 469px;
+    /* width: 90%; */
   }
   .card-one,
   .card-two,
@@ -476,12 +521,22 @@ body {
     display: none;
   }
   .our-stories {
-    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .stori-heading {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 30px;
     text-align: center;
   }
   .stories-container {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 469px;
+    max-width: 358px;
+    margin-left: 55px;
+    /* height: 1061px; */
+    align-items: center;
   }
   .stori-one {
     display: none;
@@ -490,13 +545,47 @@ body {
   .stori-three,
   .stori-four,
   .stori-five {
-    /* width: 173px; */
+    width: 217px;
+    height: 300px;
+  }
+  .stori-img {
+    width: 217px;
   }
   #stori-four-one,
   #stori-four-two {
     display: block;
   }
+  .stori-date {
+    width: 100px;
+    font-size: 11px;
+    text-align: center;
+    padding-bottom: 11px;
+    margin-left: 10px;
+  }
+  #september {
+    width: 109px;
+    font-size: 11px;
+  }
   .h-six {
-    margin-bottom: 16px;
+    line-height: 18px;
+    margin: 23px 34px 33px 27px;
+  }
+  .footer {
+    max-width: 100%;
+    height: 642px;
+  }
+  .content-container {
+    flex-direction: column;
+    margin-left: 18px;
+  }
+  .logo {
+    margin-top: -140px;
+  }
+  .footer-menu {
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+  .touch {
+    margin-top: 20px;
   }
 }
