@@ -449,11 +449,20 @@ body {
 
 /* responsive stated */
 @media screen and (max-width: 576px) {
+  body {
+    width: 570px;
+  }
   .navbar {
-    max-width: 100%;
+    width: 570px;
     margin: 0px auto;
     border: 0.5px solid var(--Orange, #fea301);
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .brand {
+    width: 570px;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
@@ -480,7 +489,7 @@ body {
 
   .banner {
     flex-direction: column-reverse;
-    max-width: 100%;
+    /* max-width: 100%; */
     text-align: center;
   }
 
